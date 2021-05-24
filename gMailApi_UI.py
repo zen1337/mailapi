@@ -9,7 +9,7 @@ class GridGrid(GridLayout):
         # call grid layout constructor
         super(GridGrid, self).__init__(**kwargs)
         # set columns
-        self.cols = 2
+        self.cols = 6
         # add widgets
         self.add_widget(Label(text="Name: "))
         # add Input Box
@@ -17,6 +17,7 @@ class GridGrid(GridLayout):
         #self.wtf = Button(text='wtf test', size_hint_x=1, width=100)
         self.add_widget(self.name)
         self.add_widget(Button(text='wtf test', size_hint_x=1, width=100))
+        self.add_widget(Label(text="Surname: "))
 
 class MainApp(App):
     def build(self):
