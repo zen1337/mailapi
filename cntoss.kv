@@ -1,0 +1,29 @@
+#:kivy 2.0.0
+<CntossBoxLayout>:
+ Label:
+  font_size: 50
+  text_size: self.size
+  text: 'Wtf its goint to be?'
+  valign: 'bottom'
+ BoxLayout:
+  orientation: 'vertical'
+  Button:
+   text: 'Heads'
+   on_release: root.choice('heads')
+  Button:
+   text: 'Tails'
+   on_release: root.choice('tails')
+ BoxLayout:
+  orientation: 'horizontal'
+  Button:
+   text: 'Heads'
+   on_release: root.choice('heads')
+  Button:
+   text: 'Tails'
+   on_release: root.choice('tails')
+ Label:
+  id: result
+  text_size: self.size
+  font_size: 40
+  text: ''
+  valign: 'bottom'
